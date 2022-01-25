@@ -4,6 +4,7 @@ def EvaluatePrefix(expression):
     OperandStack = []
     expressionlist = expression.split()
     reversedlist = expressionlist[::-1]
+    
     for x in reversedlist:
         if x.isdigit():
             OperandStack.append(int(x))
